@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <section>
@@ -21,6 +22,7 @@
             autofocus
             name="first name"
             required
+            pattern="^[A-Z][a-z]{1,12}$"
           />
           <input type="text" placeholder="last name" name="last name" />
           <input type="email" placeholder="email" name="email" required/>
