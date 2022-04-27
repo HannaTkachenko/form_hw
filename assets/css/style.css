@@ -5,10 +5,10 @@
   --title-color: #686563;
   --bg-form-color: #f2f3f7;
   --main-bg-color: #63738a;
-  --button-bg-color: #4fa74f;
-  --button-text-color: #E5F8F3;
   --link-color: #4fa74f;
-  --out-form-text-color: #E5F8F3;
+  --button-bg-color: #4fa74f;
+  --button-text-color: #e5f8f3;
+  --out-form-text-color: #e5f8f3;
 }
 * {
   box-sizing: border-box;
@@ -19,6 +19,14 @@ body {
   padding: 1rem;
   background-color: var(--main-bg-color);
 }
+.form-section {
+  display: block;
+  padding: 1.5rem;
+  margin: auto;
+  width: 420px;
+  height: 500px;
+}
+
 .form-section,
 .form {
   background-color: var(--bg-form-color);
@@ -28,22 +36,14 @@ input,
 .btn {
   border-radius: 3px;
 }
-
-.form-section {
-  display: block;
-  padding: 1.5rem;
-  margin: auto;
-  width: 350px;
-}
 h1,
 p,
 span {
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
   color: var(--text-color);
-
 }
-h1{
+h1 {
   font-size: 2rem;
   font-weight: 500;
   color: var(--title-color);
@@ -53,19 +53,16 @@ h1{
   flex-direction: column;
   justify-content: space-around;
   max-width: 90%;
-  min-height: 320px;
-  padding: 1rem;
+  min-height: 350px;
   margin: auto;
-  
 }
 fieldset {
   position: relative;
   width: 100%;
- 
 }
 fieldset,
 .form,
-.btn{
+.btn {
   border: none;
 }
 .first-name,
@@ -93,14 +90,15 @@ a {
   text-decoration: none;
 }
 .btn {
-    color: var(--button-text-color);
-    background-color: #4fa74f;
-    font-weight: 600;
+  color: var(--button-text-color);
+  background-color: #4fa74f;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .out-form,
-.out-form > a{
+.out-form > a {
   color: var(--out-form-text-color);
 }
-.out-form > a{
+.out-form > a {
   text-decoration: underline;
 }
