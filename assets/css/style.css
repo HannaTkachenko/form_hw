@@ -1,5 +1,22 @@
-h1{
+:root{
+  font-size: 14px;
+  font-family: sans-serif;
+}
+*{
+  box-sizing: border-box;
+  
+}
+
+.form-section{
+  display: block;
+  margin: auto;
+  width: 350px;
+  border: 1px solid red;
+}
+h1,
+p{
   text-align: center;
+  padding: 0 1rem;
 }
 .form{
   display: flex;
@@ -10,7 +27,12 @@ h1{
   padding: 1em;
   margin: auto;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: #eee;
   font-family: sans-serif;
 } 
+input,
+button,
+h1{
+  text-transform: capitalize;
+}
