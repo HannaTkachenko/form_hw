@@ -4,7 +4,8 @@
 }
 *{
   box-sizing: border-box;
-  
+  margin: 0;
+  padding: 0;
 }
 
 .form-section{
@@ -22,6 +23,7 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  /* flex-wrap: nowrap; */
   max-width: 300px;
   min-height: 300px;
   padding: 1em;
@@ -29,10 +31,25 @@ p{
   border: 1px solid #ccc;
   border-radius: 2px;
   background-color: #eee;
-  font-family: sans-serif;
+  
 } 
+fieldset{
+  position: relative;
+  width: 100%;
+  border: none;
+}
+
+.first-name,
+.last-name{
+   width: 45%;
+}
+.last-name{
+  position: absolute;
+  right: 0;
+}
 input,
 button,
 h1{
+  padding: 0.5rem;
   text-transform: capitalize;
 }
