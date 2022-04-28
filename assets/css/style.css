@@ -56,11 +56,11 @@ h1 {
   min-height: 350px;
   margin: auto;
 }
-fieldset {
+form > div{
   position: relative;
   width: 100%;
 }
-fieldset,
+
 .form,
 .btn {
   border: none;
@@ -101,4 +101,9 @@ a {
 }
 .out-form > a {
   text-decoration: underline;
+}
+.overflow{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
